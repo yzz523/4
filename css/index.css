@@ -1,0 +1,167 @@
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.banner .wrapper{
+    position: relative;
+    height: 500px; 
+    background-color: skyblue;
+}
+
+.banner .wrapper ul{
+  position: absolute;
+  left: 230px;
+  
+}
+
+.banner .aside{
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 250px;
+    height: 500px;
+    background-color: rgb(0, 0,0,.8);
+}
+.banner .aside li{
+    height: 50px;
+    line-height: 50px;
+}
+.banner .aside a{
+    position: relative;
+    /* 特点和父级宽度一样 */
+    display: block;
+    
+    height: 50px;
+    padding-left: 35px;
+    padding-right: 19px;
+    color: #fff;
+}
+    .banner .aside a span{
+        font-size: 14px; 
+    margin-left: 15px;   }
+    .banner .aside a:hover{
+        background-color: #27ba9b;
+    }
+    /* a的里面最后的位置添加一个箭头，伪元素 */
+    /* 箭头 */
+    /* 一个背景图位置负责两件事，要改变箭头在盒子里的位置，改变精灵
+    图在盒子里的位置，导致在精灵图里测量的尺寸不准确
+    1.书写背景图位置属性，借助谷歌的调试工具调试具体位置
+    2.书写标签时，a负责盒子，里面再加一个span标签控制精灵图位置 */
+    .prev,.next{
+        position: absolute;
+        top: 228px;
+        
+        width: 45px;
+        height: 45px;
+        background-color: rgba(0, 0,0,.2);
+        border-radius: 50%;
+        background-image: url(../images/sprites.png);
+       
+    }
+    .prev{left: 260px;
+    background-position: 14px -60px;}
+    .next{right: 10px;
+    background-position: -23px -60px;}
+    /* 圆点 */
+.banner ol{
+    width: 200px;
+    height: 10px;
+    background-color: pink;
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+}
+.banner ol li{
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255,255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.banner ol .current{
+    background-color: #fff;
+}
+/* 新鲜好物 */
+.goods{
+    position: relative;
+}
+.goods .hd{
+position: absolute;
+left: 700px;
+    height: 114px;
+    line-height: 114px;}
+.goods .hd h2{
+    height: 114px;
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+.goods .hd a{
+    float: right;
+    color: #999;
+}
+.goods .hd h2 span{
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a::after,.shengxian .hd .more::after{
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    vertical-align: middle;
+}
+.goods .bd li{
+    position: relative;
+        text-align: center;
+        float: left;
+        width: 290px;
+        height: 405px;
+        background-color:blueviolet;
+        margin-right: 55px;
+    }
+    .goods .bd li:last-child{
+        margin-right: 0;
+    }
+    .goods .bd li img{
+        width: 304px;
+       
+    }
+    .goods .bd li h3{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .goods .bd li span{
+    font-size: 23px;
+    
+    }
+    .goods .bd li div{
+        color: #9a2e1f;
+        font-size: 17px;
+    }
+    .goods .bd li b{
+        position: absolute;
+        left: 17px;
+        top: 18px;
+        width: 28px;
+        height: 51px;
+        border: 1px solid #27ba9b;
+        border-radius: 3px;
+        color: #27ba9b;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    
+    }
+
+    

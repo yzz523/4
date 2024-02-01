@@ -1,0 +1,123 @@
+/* 版心 */
+.wrapper{
+    width: 1500px;
+    margin: 0 auto;
+}
+.shortcut{
+    width: 1055px;
+    height:65px;
+    background-color: white;
+}
+.shortcut .wrapper{
+    position: relative;
+    height: 350px;
+    width: 1400px;
+    
+}
+.shortcut .wrapper .logo{
+   
+   position: absolute;
+   left: 30px;
+    top: 0px;
+}
+.shortcut .wrapper span{
+    
+    position: absolute;
+    left: 140px;
+    top: 20px;
+    color: #474747;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+.search{
+    text-align: center;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 0;
+    float: right;
+    width: 200px;
+    height: 50pxpx;
+    border: 2px solid #78b70e;
+}
+
+.sousuo{
+    color: white;
+   position: absolute;
+   right: 0;
+   top: 0;
+    display: inline-block;
+    background-color: #cdf693;
+    width: 50px;
+    height: 25px;
+}
+/* 版权 */
+.footer{
+    height: 342px;
+    background-color: #333;
+
+}
+.footer .wrapper{
+    width: 1393px;
+}
+.footer .top{
+    height: 175px;
+    border-bottom: 3px solid #434343;
+    padding-top: 59px;
+    padding-left: 135px;
+}
+.footer .top li{
+    position: relative;
+    margin-right: 300px;
+    float: left;
+    width: 195px;
+    height: 58px;
+    
+}
+.footer .top li:last-child{
+    margin-right: 0;
+}
+/* 伪元素添加的标签是行内显示 */
+/* 如果行内块无法通过vertical-align或行高对齐，就用定位 */
+.footer .top li::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-image: url(../images/sprites.png);
+    vertical-align: middle;
+
+}
+.footer .top li span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 77px;
+    font-size: 28px;
+    color:#fff;
+}
+/* 第二个li添加背景图属性 */
+.footer .top li:nth-child(2)::before{
+    background-position: -64px 0;
+}
+.footer .top li:nth-child(3)::before{
+    background-position: -130px 0;
+}
+.footer .bottom{
+    padding-top: 40px;
+    font-size: 14;
+    color: #999;
+    text-align: center;
+
+}
+.footer .bottom a{
+    font-size: 14;
+    color: #999;
+}
+.footer .bottom p{
+    margin-bottom: 20px;
+}
+
+
